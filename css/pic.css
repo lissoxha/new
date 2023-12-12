@@ -1,0 +1,341 @@
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background: url('C:/Users/Tester/Desktop/фон.jpg') center/cover no-repeat fixed;
+    position: relative;
+}
+
+.header {
+  font-family: Calibri;
+  font-size: 80px;
+  position: absolute;
+  width: 100%;
+  height: 85px; 
+  left: 0;
+  top: 0;
+  z-index: 50;
+  background-color: #5f7e5f;
+}
+
+.header__container {
+    font-family: 'Courier New';
+    display: flex;
+    min-height: 70px;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-right: 48px;
+    padding: 26px;
+}
+
+.header__menu {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu__list {
+    
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu__item {
+  font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    line-height: calc(24/14*100%);
+    margin-right: 50px;
+}
+
+.menu__link {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    line-height: calc(24/14*100%);
+}
+
+.rectangle0 {
+    width: 1400px;
+    height: 180px;
+    background-color: #518251;
+    position: absolute;
+    top: 70%;
+    left: -10%;
+}
+.text-inside-rectangle {
+    color: #537d51;
+
+}
+.text-inside-rectangle1 {
+    font-family: 'Courier New';
+    color: #daf4d8;
+    font-size: 16px; 
+}
+
+@media (max-width: 768px) {
+    .menu__item {
+        margin-right: 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .header__logo {
+        font-size: 20px; /* Уменьшаем размер логотипа на маленьких экранах */
+    }
+    .menu__item {
+        margin-right: 10px; /* Уменьшаем отступ между пунктами меню еще больше */
+    }
+}
+@media (max-width: 480px) {
+    .image1,
+    .image3,
+    .image4,
+    .image5,
+    .image6,
+    .image7,
+    .image8,
+    .image9,
+    .image10,
+    .image11,
+    .image12 {
+        height: 150px; /* Устанавливаем новую высоту для картинок */
+        width: auto; /* Позволяет картинкам сохранять пропорции */
+    }
+}
+.footer {
+    display: none;
+    width: 1100px; /* Ширина вашего футера */
+    height: 200px; /* Высота вашего футера */
+    background-color: #333; /* Цвет фона вашего футера */
+    position: fixed; /* Фиксированная позиция */
+    bottom: 0; /* Расположение внизу страницы */
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Устанавливаем новый размер шрифта для body */
+    }
+    .header__logo {
+        font-size: 20px; /* Устанавливаем новый размер шрифта для логотипа в шапке */
+    }
+    .menu__item {
+        font-size: 14px; /* Устанавливаем новый размер шрифта для пунктов меню */
+    }
+}
+
+.rating {
+    font-size: 40px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin-top: 40px; 
+}
+
+.star {
+    color: #b9e7bd;
+}
+
+.star:hover {
+    color: #789f75;
+}
+
+:root{
+  --yellow: #fbf79c;
+  --red: #e61a43;
+  --blue:#6094f6;
+  --blueship: #86e9f4;
+  --brown: #835523;
+  --hex: #9c9da0;
+
+}
+.container {
+  position:relative;
+margin-top: 10%;
+margin-left: 5%;
+.square {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom right, #ffffff, #c1daf0);
+  
+}
+.sun {
+  position: absolute;
+  top: -10px; 
+  left: -10px; 
+  width: 45px; 
+  height: 45px;
+  background: var(--yellow); 
+  clip-path: polygon(21% 20%, 100% 20%, 100% 100%, 20% 100%);
+  border-radius: 50%;
+}
+
+.arc {
+  position:absolute;
+  top: 30px;
+  left: 130px ;
+  width: 55px; 
+  height: 130px;
+  background: transparent;
+  border-radius: 50px 50px 0 0; /* Радиусы для верхнего полукруга */
+  border: 7px solid var(--hex); 
+  border-bottom: none; /* Убираем нижнюю границу */
+}
+.arc2 {
+  position:absolute;
+  top: 30px;
+  left: 65px ;
+  width: 55px; 
+  height: 140px;
+  background: transparent;
+  border-radius: 50px 50px 0 0; 
+  border: 7px solid var(--hex); 
+  border-bottom: none;
+}
+.arc3 {
+  position:absolute;
+  top: 30px;
+  left: 0px ;
+  width: 55px; 
+  height: 150px;
+  background: transparent;
+  border-radius: 50px 50px 0 0; 
+  border: 7px solid var(--hex); 
+  border-bottom: none; 
+}
+
+.ship {
+
+  position:absolute;
+  top: 125px;
+  left: 50px ;
+height:20px;
+width: 10%;
+  transform: rotate(180deg);
+  border-bottom: 40px solid var(--brown);
+border-left: 30px solid transparent;
+border-right: 30px solid transparent;
+}
+
+.mast {
+  width: 6px;
+  height: 105px;
+  background-color: #835523; 
+  position: relative;
+  top: 30px;
+  left: 50px;
+}
+
+.sail {
+  width: 0;
+  height: 0;
+  border-left: 46px solid transparent;
+  border-right: 46px solid transparent;
+  border-bottom: 40px solid var(--blueship); 
+  position: relative;
+  top: -38px;
+  left: -17px;
+  transform: rotate(-90deg);
+}
+
+.triangle {
+  position:absolute;
+  top: 130px;
+  left: 42px ;
+  width: 0px;
+  height: 0;
+  border-left: 8px solid transparent; 
+  border-right: 8px solid transparent; 
+  border-bottom: 12px solid var(--red); 
+  transform: rotate(-90deg);
+}
+.wave1 {
+  position:absolute;
+  top: 155px;
+  left: 85px ;
+  width: 75px;
+  height: 75px;
+  background:linear-gradient(to bottom right,#edf3f6, var(--blue)) ;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 0% 65%);
+  border-radius: 50%;
+ }
+
+ .wave2 {
+  position:absolute;
+  top: 140px;
+  left: 30px ;
+  width: 75px;
+  height: 75px;
+  background:linear-gradient(to bottom right,#edf3f6, var(--blue)) ;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 85%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 85%);
+  border-radius: 50%;
+ }
+ .wave3 {
+  position:absolute;
+  top: 155px;
+  left: -20px ;
+  width: 75px;
+  height: 75px;
+  background:linear-gradient(to bottom right,#edf3f6, var(--blue)) ;
+  clip-path: polygon(26% 0%, 140% 0%, 160% 65%, 27% 65%); 
+  border-radius: 50%;
+ }
+
+.wave {
+  position:absolute;
+  top: 140px;
+  left: 140px ;
+  width: 75px;
+  height: 75px;
+  background:linear-gradient(to bottom right,#edf3f6, var(--blue)) ;
+  clip-path: polygon(0% 0%, 80% 0%, 80% 85%, 0% 85%); 
+  border-radius: 50%;
+ }
+}

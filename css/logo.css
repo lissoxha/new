@@ -1,0 +1,30 @@
+
+.flower {
+    width: 20px; 
+    height: 20px; 
+    border: 3px solid #56191a;
+    background: #b44743;
+    position: absolute; 
+    top: 10px;
+    right: 40px; 
+    transform: rotate(45deg);
+}  
+.flower:before, 
+.flower:after {
+    content: "";
+    position: absolute;
+    width: 30px; 
+    height: 50px;
+    border: 3px solid #56191a;
+    transform: rotate(-45deg);
+}
+.flower:before {
+    background:  #983b38;
+    border-radius: 0 100% 50% 90%;
+}
+.flower:after {
+    left: 10px; 
+    top: -10px;
+    background:  #983b38;
+    border-radius: 100% 0  90% 50%;
+}

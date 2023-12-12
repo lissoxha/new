@@ -1,0 +1,290 @@
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background: url('C:/Users/Tester/Desktop/site tales/sitem/фон.jpg') center/cover no-repeat fixed;
+    background-color: rgba(255, 255, 255, 0.5); 
+    position: relative;
+}
+
+._container {
+    max-width: 1700px;
+    padding: 0px 25px;
+    margin: 0px auto;
+    box-sizing: content-box;
+    
+}
+
+.header {
+    font-family: Calibri;
+    font-size: 30 px;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    z-index: 50;
+    background-color: #5f7e5f;
+}
+
+.header__container {
+    font-family: 'Courier New';
+    display: flex;
+    min-height: 65px;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-right: 40px;
+}
+
+.header__menu {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu__list {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu__item {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    line-height: calc(24/14*100%);
+    margin-right: 30px;
+}
+
+.menu__link {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    line-height: calc(24/14*100%);
+}
+
+.white-rectangle {
+    position: absolute;
+    background-color: #ffffff;
+    opacity: 0.8; 
+    z-index: 1; 
+}
+
+.rectangle-1 {
+    padding: 30px;
+    width: 57%;
+    height: 230px;
+    top: 85%;
+    left: 35%;
+}
+.rectangle-2 {
+    padding: 30px;
+    width: 55%;
+    height: 180px;
+    top: 155%;
+    left:50px;
+}
+
+.rectangle-3 {
+    padding: 30px;
+    width: 55%;
+    height: 270px;
+    top: 197%;
+    left:48px;
+}
+.rectangle-4 {
+    padding: 30px;
+    width: 55%;
+    height: 230px;
+    top: 265%;
+    left:375px;
+}
+.rectangle-5 {
+    padding: 30px;
+    width: 50%;
+    height: 315px;
+    top: 325%;
+    left:20px;
+}
+.rectangle0 {
+    width: 1400px;
+    height: 180px;
+    background-color: #518251;
+    position: absolute;
+    top: 410%;
+    left: -20%;
+}
+.footer {
+    display: none;
+    width: 1100px; 
+    height: 200px; 
+    background-color: #54a26f; 
+    bottom: 0; 
+}
+
+.text-inside-rectangle {
+    color: #537d51;
+}
+
+.text-inside-rectangle1 {
+    font-family: 'Courier New';
+    color: #daf4d8;
+    font-size: 16px; 
+}
+
+@media (max-width: 970px) {
+
+.image12,
+.image11,
+.image8,
+.image22,
+.a,
+.tall,
+.image9,
+.image10
+
+ {
+        display: none; 
+    }
+}
+.rating {
+    font-size: 40px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.star {
+    font-size: 20px; 
+    color: #b9e7bd;
+}
+
+.star:hover {
+    color: #789f75;
+}
+
+@media screen and (max-width: 768px) {
+    .rating {
+        font-size: 30px; 
+        margin-top: 20px; 
+    }
+    .star {
+        font-size: 15px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .rating {
+        font-size: 20px; 
+        margin-top: 20px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px; 
+    }
+
+    @media screen and (max-width: 480px) {
+        body {
+            font-size: 10px; 
+        }
+        .rectangle-1,
+        .rectangle-2,
+        .rectangle-3,
+        .rectangle-5 {
+            width: 60%;
+            height: 50%;
+            padding: 20px; 
+            margin-bottom: 0px; 
+        }
+       
+        .white-rectangle{
+            width: 70%;
+            margin-right: 850px;
+        }
+      
+        .image8,
+        .image9,
+        .image10,
+        .image11,
+        .image12,
+        .tall,
+        .a,
+        .imagexx,
+        .imagex,
+        .image0,
+        .image,
+        .image3,
+        .image4,
+    
+        .image7 {
+            max-width: 50%; 
+            max-height: 40%;
+            margin-bottom: 40px; 
+        }
+
+        .image6 {
+            margin-top: -160px;
+        }
+
+        .header {
+            height: auto;
+        }
+
+        .header__logo {
+            font-size: 14px; 
+            margin-right: 10px; 
+        }
+
+        .menu__list {
+            flex-direction: column;
+        }
+
+        .menu__item {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+}
