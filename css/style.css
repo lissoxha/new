@@ -147,12 +147,12 @@ body {
     left:20px;
 }
 .rectangle0 {
-    width: 1400px;
+    width: 2000px;
     height: 180px;
     background-color: #518251;
     position: absolute;
     top: 410%;
-    left: 20%;
+    left: 10%;
 }
 .footer {
     display: none;
