@@ -41,7 +41,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: auto;
-    background: url('C:/Users/Tester/Desktop/site tales/sitem/фон.jpg') center/cover no-repeat fixed;
+    background: url('sitem/фон.jpg') center/cover no-repeat fixed;
     background-color: rgba(255, 255, 255, 0.5); 
     position: relative;
 }
